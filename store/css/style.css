@@ -1,0 +1,253 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 0 35px;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 20px 15px;
+}
+
+p{
+	padding-top: 15px;
+	margin: 0 0 25px;
+	text-align: center;
+}
+
+hr{
+	width: 300px;
+	height: 1px;
+	background-color: white;
+	margin: 40px auto;
+}
+
+a{
+	transition: all 0.2s ease-in-out;
+	color: cyan;
+}
+a:focus, a:hover{
+	text-decoration: none;
+	color: blue;
+}
+
+h3.title{
+	font-size: 2.5rem;
+	margin: 50px auto;
+}
+
+h6.title{
+	margin: 15px auto 5px auto;
+}
+/*------------NAV----------------------*/
+
+.nav-link a{
+	color: white;
+}
+
+
+
+
+
+/*------------END NAV----------------------*/
+
+
+/*------------MASTHEAD----------------------*/
+
+.masthead{
+	display: table;
+	width: 100%;
+	height: 100%;
+	padding: 200px 0;
+	text-align: center;
+	color: white;
+	background:url('../img/astro.jpg') no-repeat bottom center scroll; 
+	background-size: cover;
+}
+
+.masthead .intro-body{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.masthead .intro-body .brand-heading{
+	font-size: 50px;
+
+}
+
+.masthead .intro-body .intro-text{
+	font-size: 18px;
+	
+}
+
+@media(min-width: 768px){
+	.masthead{
+		height: 100vh;
+		padding: 0;
+	}
+
+	.masthead .intro-body .brand-heading{
+		font-size: 100px;
+	}
+	.masthead .intro-body .intro-text{
+		font-size: 22px;
+	}
+}
+
+.text-drop{
+	margin-top: 40px;
+	text-shadow: 2px 2px black;
+}
+
+.tag-line{
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 20px;
+	padding: 20px 0;
+}
+
+.display-1{
+	font-size: 10rem;
+}
+
+.btn-circle{
+	font-size: 26px;
+	width: 55px;
+	height: 55px;
+	margin-top: 15px;
+	line-height: 45px;
+	transition: background .03s ease-in-out;
+	color: white;
+	border: 2px solid white;
+	border-radius:100% !important;
+	background:transparent;
+}
+
+.btn-circle:focus, .btn-circle:hover{
+	color: white;
+	outline: none;
+	background:rgba(255,255,255,0.1);
+}
+
+
+/*------------END MASTHEAD----------------------*/
+
+/*------------ABOUT SECTION----------------------*/
+
+
+#about{
+	margin: 50px auto;
+}
+
+.about-img{
+	width: 100%;
+	border-radius:20px;
+	
+}
+
+
+/*------------END ABOUT SECTION----------------------*/
+/*-------------SERVICES SECTION----------------------*/
+
+#services{
+	width: 100%;
+	background-color:  	#303030;
+	margin: 50px auto;
+}
+
+#services .service{
+	margin: 25px;
+	text-align: center;
+	color: white;
+}
+
+#services .service .icon{
+	font-size: 40px;
+}
+
+@media(max-width: 576px){
+	#services .service{
+		border-bottom: 1px solid black;
+	}
+}
+
+
+/*------------END SERVICES SECTION----------------------*/
+
+
+/*------------GALLERY SECTION----------------------*/
+
+#gallery{
+	margin: 50px auto;
+}
+
+#gallery .row{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.gallery-img{
+	margin: 20px auto;
+	width: 100%;
+	border-radius: 10px;
+}
+
+@media(min-width: 576px){
+	.gallery-img{
+		height: 250px;
+	}
+}
+
+@media(min-width: 992px){
+	.gallery-img{
+		height: 350px;
+	}
+}
+
+/*------------END GALLERY SECTION----------------------*/
+/*------------CONTACT SECTION----------------------*/
+#contact{
+	margin: 50px auto;
+}
+
+@media(min-width: 576px){
+	#contact .contact-details{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
+
+	}
+}
+
+@media(min-width: 768px){
+	#contact .contact-details{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+
+	}
+}
+
+@media(min-width: 992px){
+	#contact .contact-details{
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: space-around;
+
+	}
+}
+/*------------END CONTACT SECTION----------------------*/
+
+/*------------FOOTER SECTION----------------------*/
+
+footer{
+	background: linear-gradient(to bottom, #343a40, #000000 100%);
+}
+
+/*------------END FOOTER SECTION----------------------*/
